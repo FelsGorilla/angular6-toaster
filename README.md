@@ -1,13 +1,6 @@
-# Angular5-Toaster
+# Angular6-Toaster
 
-**angular5-toaster** is an asynchronous, non-blocking, Ahead of Time Compilation-supported Angular Toaster Notification library 
-largely based off of [AngularJS-Toaster](https://github.com/jirikavi/AngularJS-Toaster) and [angular2-Toaster](https://github.com/ Stabzs/Angular2-Toaster).
-
-[![npm](https://img.shields.io/npm/v/angular5-toaster.svg?maxAge=3600?cachebust=true)](https://www.npmjs.com/package/angular5-toaster)
-[![npm](https://img.shields.io/npm/dt/angular5-toaster.svg?cachebust=true)](https://www.npmjs.com/package/angular5-toaster)
-[![Build Status](https://travis-ci.org/karclouds/Angular5-Toaster.svg?branch=master)](https://travis-ci.org/karclouds/Angular5-Toaster)
-[![Coverage Status](https://coveralls.io/repos/github/karclouds/Angular5-Toaster/badge.svg?branch=master&b=4.0.1)](https://coveralls.io/github/karclouds/Angular5-Toaster?branch=master)
-
+Fork of karclouds/Angular5-Toaster migrated to RxJS 6
 
 # Getting Started
 
@@ -521,16 +514,10 @@ npm run test
 
 
 ## Author
+FelsGorilla(info@cubi-tech.de)
+
+Original Author
 [karclouds](karclouds@gmail.com)
-
-## Credits
-Forked and Modified from https://github.com/jirikavi/AngularJS-Toaster & https://github.com/stabzs/Angular2-Toaster.git
-
-Inspired by http://codeseven.github.io/toastr/demo.html.
-
-## Copyright
-Copyright © 2016-2018 karclouds.
-
 
 ## Licence
 
