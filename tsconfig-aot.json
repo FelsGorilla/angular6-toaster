@@ -16,7 +16,7 @@
         "target": "es5"
     },
     "files": [
-        "./angular5-toaster.ts"
+        "./angular6-toaster.ts"
     ],
     "exclude": [
         "node_modules",

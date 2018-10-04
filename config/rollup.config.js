@@ -1,23 +1,19 @@
 export default {
-    entry: './dist/angular5-toaster.js',
-    dest: './dist/bundles/angular5-toaster.umd.js',
+    entry: './dist/angular6-toaster.js',
+    dest: './dist/bundles/angular6-toaster.umd.js',
     format: 'umd',
-    moduleName: 'angular5toaster',
+    moduleName: 'angular6toaster',
     external: [
         '@angular/core',
         '@angular/common',
-        'rxjs/Observable',
-        'rxjs/Observer',
-        'rxjs/add/operator/share',
-        'rxjs/Subject',       
+        'rxjs',
+        'rxjs/operators'
     ],
     globals: {
         '@angular/core': 'ng.core',
         '@angular/common': 'ng.common',
-        'rxjs/Observable': 'Rx',
-        'rxjs/Observer': 'Rx',
-        'rxjs/add/operator/share': 'Rx',
-        'rxjs/Subject': 'Rx'
+        'rxjs': 'Rx',
+        'rxjs/operators': 'Rx.operators',
     },
     onwarn: (e) => { return }
 }

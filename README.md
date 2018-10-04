@@ -1,25 +1,25 @@
 # Angular6-Toaster
 
-Fork of karclouds/Angular5-Toaster migrated to RxJS 6
+Fork of karclouds/angular6-Toaster migrated to RxJS 6
 
 # Getting Started
 
 ## Installation:
 
 ```bash
-npm install angular5-toaster
+npm install angular6-toaster
 ```
 
 ## Import CSS
 
 ### Copy or Link CSS
 ```html
-<link rel="stylesheet" type="text/css" href="/node_modules/angular5-toaster/toaster.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/angular6-toaster/toaster.scss" />
 ```
 
 ### Import CSS with Sass or Less
 ```scss
-@import 'node_modules/angular5-toaster/toaster';
+@import 'node_modules/angular6-toaster/toaster';
 ```
 
 
@@ -27,7 +27,7 @@ npm install angular5-toaster
 
 ### Import via SystemJS
 Within the `map` property of the `systemjs.config` file, add mappings for angular, rxjs 
-(which is a dependency), and the angular5-toaster bundled umd file:
+(which is a dependency), and the angular6-toaster bundled umd file:
 
 ```javascript
 map: {
@@ -36,7 +36,7 @@ map: {
       // ...
       // other libraries
       'rxjs':  'npm:rxjs',
-      'angular5-toaster': 'npm:angular5-toaster/bundles/angular5-toaster.umd.js'
+      'angular6-toaster': 'npm:angular6-toaster/bundles/angular6-toaster.umd.js'
 ```
 
 ### Import via Webpack
@@ -48,7 +48,7 @@ Simply follow the `Getting Started` instructions to import the library.
 ```typescript
 import {NgModule, Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterModule, ToasterService} from 'angular5-toaster';
+import {ToasterModule, ToasterService} from 'angular6-toaster';
 import {Root} from './root.component'
 
 @NgModule({
@@ -84,7 +84,7 @@ export class Root {
 ```typescript
 import {Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterContainerComponent, ToasterService} from 'angular5-toaster';
+import {ToasterContainerComponent, ToasterService} from 'angular6-toaster';
 
 @Component({
     selector: 'root',
@@ -116,7 +116,7 @@ bootstrap(Root);
 ```typescript
 import {Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterContainerComponent, ToasterService, ToasterConfig} from 'angular5-toaster';
+import {ToasterContainerComponent, ToasterService, ToasterConfig} from 'angular6-toaster';
 
 @Component({
     selector: 'root',
@@ -203,7 +203,7 @@ To add animations:
     ```typescript
     import {NgModule, Component} from '@angular/core';
     import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-    import {ToasterModule} from 'angular5-toaster';
+    import {ToasterModule} from 'angular6-toaster';
     
     @NgModule({
         imports: [BrowserAnimationsModule, ToasterModule],
@@ -211,12 +211,12 @@ To add animations:
     ```
 
 If you want to avoid bringing in an additional module solely for the sake of animations, you can 
-explicitly configure `angular5-toaster` to ignore animations.  To do so, import the 
+explicitly configure `angular6-toaster` to ignore animations.  To do so, import the 
 `NoopAnimationsModule` instead:
 
 ```typescript
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterModule} from 'angular5-toaster';
+import {ToasterModule} from 'angular6-toaster';
     
 @NgModule({
     imports: [NoopAnimationsModule, ToasterModule],
@@ -423,7 +423,7 @@ is not provided, it will be defaulted to 'Default'.
  
 * TrustedHtml: The `body` argument will be parsed and rendered as html content.
   ```typescript
-  import {BodyOutputType} from 'angular5-toaster';
+  import {BodyOutputType} from 'angular6-toaster';
   var toast : Toast = {
       type: 'error',
       title: 'Title text',
@@ -437,7 +437,7 @@ is not provided, it will be defaulted to 'Default'.
 * Component: The `body` argument is the name of the component class to be rendered as the content 
 of the toast.
   ```typescript
-  import {BodyOutputType} from 'angular5-toaster';
+  import {BodyOutputType} from 'angular6-toaster';
   
   @Component({
     selector: 'dynamic-component',
@@ -489,12 +489,12 @@ this.toasterService.pop(toast);
 
 
 # Building the Source
-In order to build Angular5-Toaster for development, you will need to have Git and Node.js installed.
+In order to build Angular6-Toaster for development, you will need to have Git and Node.js installed.
 
 Clone a copy of the repo:
 
 ```bash
-git clone https://github.com/karclouds/Angular5-Toaster.git
+git clone https://github.com/FelsGorilla/angular6-toaster.git
 ```
 
 In the cloned directory, run:
@@ -517,7 +517,7 @@ npm run test
 FelsGorilla(info@cubi-tech.de)
 
 Original Author
-[karclouds](karclouds@gmail.com)
+(karclouds@gmail.com)
 
 ## Licence
 

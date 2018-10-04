@@ -1,15 +1,16 @@
 import {Component, NgModule} from '@angular/core';
 import {TestBed} from '@angular/core/testing';
 import {ComponentFixture} from '@angular/core/testing';
+import {BrowserModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {Toast, ClickHandler} from './toast';
 import {ToasterService} from './toaster.service';
 import {ToasterContainerComponent} from './toaster-container.component';
 import {ToasterConfig} from './toaster-config';
 import {BodyOutputType} from './bodyOutputType';
-import {ToasterModule} from '../angular5-toaster';
-import {BrowserModule} from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ToasterModule} from '../angular6-toaster';
+
 
 // Mock component for bootstrapping <toaster-container></toaster-container>
 @Component({
@@ -515,8 +516,10 @@ describe('ToasterContainerComponent with sync ToasterService', () => {
         const toast: Toast = { type: 'success' };
         const poppedToast = toasterService.pop(toast);
 
-        expect(poppedToast.timeoutId).toBeDefined();
-        expect((<any>(poppedToast.timeoutId)).data.delay).toBe(1);
+        toasterService.addToast.subscribe((toasted: Toast) => {
+            expect(toasted.timeoutId).toBeDefined();
+            expect(toasted.timeout).toBe(1);
+        });
     });
 
     it('addToast will not register timeout if toast.timeout is undefined and toasterconfig.timeout is 0', () => {

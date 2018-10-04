@@ -1,3 +1,7 @@
+# 6.0.0 (2018-10-05)
+* First Angular 6 / RxJS 6 compatible release
+
+
 # 4.0.1 (2017-7-16)
 * **toast-container.component:** The setTimeout call now runs outside of Angular and is patched on 
 reentry with an `ngZone.run()` call.  This should provide better performance overall and should 
