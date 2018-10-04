@@ -1,6 +1,6 @@
 # Angular6-Toaster
 
-Fork of karclouds/angular6-Toaster migrated to RxJS 6
+Fork of karclouds/angular5-Toaster migrated to RxJS 6
 
 # Getting Started
 
