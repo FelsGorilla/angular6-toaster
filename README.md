@@ -19,7 +19,7 @@ npm install @felsgorilla/angular6-toaster
 
 ### Import CSS with Sass or Less
 ```scss
-@import 'node_modules/angular6-toaster/toaster';
+@import 'node_modules/@felsgorilla/angular6-toaster/toaster';
 ```
 
 
@@ -48,7 +48,7 @@ Simply follow the `Getting Started` instructions to import the library.
 ```typescript
 import {NgModule, Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterModule, ToasterService} from 'angular6-toaster';
+import {ToasterModule, ToasterService} from '@felsgorilla/angular6-toaster';
 import {Root} from './root.component'
 
 @NgModule({
@@ -84,7 +84,7 @@ export class Root {
 ```typescript
 import {Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterContainerComponent, ToasterService} from 'angular6-toaster';
+import {ToasterContainerComponent, ToasterService} from '@felsgorilla/angular6-toaster';
 
 @Component({
     selector: 'root',
@@ -116,7 +116,7 @@ bootstrap(Root);
 ```typescript
 import {Component} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterContainerComponent, ToasterService, ToasterConfig} from 'angular6-toaster';
+import {ToasterContainerComponent, ToasterService, ToasterConfig} from '@felsgorilla/angular6-toaster';
 
 @Component({
     selector: 'root',
@@ -203,7 +203,7 @@ To add animations:
     ```typescript
     import {NgModule, Component} from '@angular/core';
     import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-    import {ToasterModule} from 'angular6-toaster';
+    import {ToasterModule} from '@felsgorilla/angular6-toaster';
     
     @NgModule({
         imports: [BrowserAnimationsModule, ToasterModule],
@@ -216,7 +216,7 @@ explicitly configure `angular6-toaster` to ignore animations.  To do so, import 
 
 ```typescript
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {ToasterModule} from 'angular6-toaster';
+import {ToasterModule} from '@felsgorilla/angular6-toaster';
     
 @NgModule({
     imports: [NoopAnimationsModule, ToasterModule],
@@ -423,7 +423,7 @@ is not provided, it will be defaulted to 'Default'.
  
 * TrustedHtml: The `body` argument will be parsed and rendered as html content.
   ```typescript
-  import {BodyOutputType} from 'angular6-toaster';
+  import {BodyOutputType} from '@felsgorilla/angular6-toaster';
   var toast : Toast = {
       type: 'error',
       title: 'Title text',
@@ -437,7 +437,7 @@ is not provided, it will be defaulted to 'Default'.
 * Component: The `body` argument is the name of the component class to be rendered as the content 
 of the toast.
   ```typescript
-  import {BodyOutputType} from 'angular6-toaster';
+  import {BodyOutputType} from '@felsgorilla/angular6-toaster';
   
   @Component({
     selector: 'dynamic-component',
