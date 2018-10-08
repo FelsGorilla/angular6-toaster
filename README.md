@@ -7,7 +7,7 @@ Fork of karclouds/angular5-Toaster migrated to RxJS 6
 ## Installation:
 
 ```bash
-npm install angular6-toaster
+npm install @felsgorilla/angular6-toaster
 ```
 
 ## Import CSS
