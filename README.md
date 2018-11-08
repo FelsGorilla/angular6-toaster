@@ -19,7 +19,7 @@ npm install @felsgorilla/angular6-toaster
 
 ### Import CSS with Sass or Less
 ```scss
-@import 'node_modules/@felsgorilla/angular6-toaster/toaster';
+@import "~@felsgorilla/angular6-toaster/dist/toaster";
 ```
 
 
